@@ -70,6 +70,7 @@ td { vertical-align: top; }
 body{ padding-top:100px; }
 a{ color:#333; text-decoration:none; }
 a:hover{ color:#999; }
+h1, h2, h3, h4, h5, h6{ margin:0; padding:0; }
 
 #main{ max-width:960px; margin:0 auto; }
 .effect{ border:1px solid #f0f0f0; box-shadow:3px 3px 10px rgba(0, 0, 0, 0.5); }
@@ -78,16 +79,20 @@ a:hover{ color:#999; }
 #header h1{ font-size:14px; text-align:left; padding-left:90px; float:left; display:inline; }
 #header h1 span{ font-size:11px; }
 #header ul{ float:left; padding:0 0 0 30px; }
-#header ul li{ float:left; display:inline; margin:3px 3px; border-radius:2px; box-shadow:0 0 3px rgba(0, 0, 0, 0.5); padding:6px 10px; font-size:12px; }
+#header ul li{ float:left; display:inline; margin:3px 3px; padding:6px 10px; font-size:12px; }
 #header #busca{ float:right; margin-right:100px; }
 #header #busca input{ border:1px solid #ccc; padding:0 10px; line-height:28px; display:block; height:28px; font-size:11px; color:#999; width:200px; border-radius:3px; }
 
 #posts{  }
 .post{ max-width:900px; margin:0 auto 60px auto; }
+.post h1{ font-size:28px; }
+.post h2{ font-size:26px; }
+.post h3{ font-size:23px; }
+.post h4{ font-size:20px; }
 .post .post-title{ text-align:left; font-size:33px; width:700px; color:#C90009; margin:0; padding:10px 0 30px 0; }
 .post .post-title a{ color:#C90009; }
 .post .post-title a:hover{ background:#C90009; color:#fff; padding:3px; }
-.post .post-text{ padding:40px 50px 0; }
+.post .post-text{ padding:40px 50px; }
 .post .post-date{ text-align:left; margin:0; }
 .post .post-read-more{ padding:20px 0 40px; }
 .post .post-read-more a{ float:right; display:inline; padding:10px; background:#C90009; color:#fff; border-radius:4px; }
@@ -99,6 +104,8 @@ a:hover{ color:#999; }
 .gist-meta a{color:#26a !important;text-decoration:none}
 .gist-meta a:hover{color:#0e4071 !important}
 
+/* pygments */
+/*.highlight{ background:#000; }*/
 
 @media only screen and (min-width: 35em) {
   

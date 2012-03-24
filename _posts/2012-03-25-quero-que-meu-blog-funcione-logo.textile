@@ -3,6 +3,59 @@ layout: post
 title: Vamos estriar o blog
 category: [javascript, html5]
 ---
+h1. Tituloe em h1
+
+h2. Tituloe em h2
+
+h3. Tituloe em h3
+
+h4. Tituloe em h4
+
 Esté é apenas mais um post inaugural sobre alguma coisas interessante, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 In reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+* item 1 da lista
+* item 2 da lista
+* item 3 da lista
+
+{% highlight javascript %}
+Function.prototype.expose = function( private ){
+    this.fn = this.fn || undefined;
+
+    if ( this.fn ){
+        return this.fn.get( private )
+    };
+
+    var get = function( v ){
+        return eval( v );
+    };
+
+    var fnSource = this.toString().match( /function.+?\((.*)\).+?\{([\s\S]*)\}/ );
+    var F = new Function( fnSource[1],'this.get='+get+';'+fnSource[2] );
+    this.fn = new F;
+    return this.fn.get(private);
+}
+
+var fn = function() {
+    c = 1;
+    return c;
+};
+
+var fn2 = function() {
+    a = 1;
+    if( a > 0 ){
+        a=10;
+    }
+    return a;
+};
+
+var config = function() {
+    var url = 'http://10.42.43.100';
+    var privateKey = '#aˆ&$DU)DI)RQ#@#$%ˆFHGFOIJE%$#$#%(';
+};
+
+console.log( fn.expose('c') );
+console.log( fn2.expose('a') );
+console.log( config.expose('privateKey') );
+{% endhighlight %}
