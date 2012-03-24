@@ -1,0 +1,10 @@
+---
+layout: posts
+---
+<article class="post">
+  <p class="post-date"><time>{{ page.date | date_to_string }}</time></p>          
+  <h2 class="post-title"><a href="#">{{ page.title }}</a></h2>          
+  <div class="post-text effect">
+      {{ content }}
+  </div>
+</article>

@@ -1,0 +1,12 @@
+---
+layout: default
+title: Carlos Roberto
+---
+{% assign first_post = site.posts.first %}
+<article class="post">
+  <p class="post-date"><time>{{ first_post.date | date_to_string }}</time></p>          
+  <h2 class="post-title"><a href="#">{{ first_post.title }}</a></h2>          
+  <div class="post-text effect">
+      {{ first_post.content }}
+  </div>
+</article>
