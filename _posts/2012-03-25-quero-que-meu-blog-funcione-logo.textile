@@ -19,6 +19,8 @@ In reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 * item 2 da lista
 * item 3 da lista
 
+<!--more-->
+
 {% highlight javascript %}
 Function.prototype.expose = function( private ){
     this.fn = this.fn || undefined;
@@ -36,7 +38,11 @@ Function.prototype.expose = function( private ){
     this.fn = new F;
     return this.fn.get(private);
 }
+{% endhighlight %}
 
+Alguns testes nas funções abaixo:
+
+{% highlight javascript %}
 var fn = function() {
     c = 1;
     return c;
@@ -55,7 +61,7 @@ var config = function() {
     var privateKey = '#aˆ&$DU)DI)RQ#@#$%ˆFHGFOIJE%$#$#%(';
 };
 
-console.log( fn.expose('c') );
-console.log( fn2.expose('a') );
-console.log( config.expose('privateKey') );
+console.log( fn.expose('c') ); // 1
+console.log( fn2.expose('a') ); // 10
+console.log( config.expose('privateKey') ); // #aˆ&$DU)DI)RQ#@#$%ˆFHGFOIJE%$#$#%(
 {% endhighlight %}

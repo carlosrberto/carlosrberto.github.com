@@ -20,24 +20,39 @@
 <body>
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
   <header id="header" class="clearfix">
-      
-      <h1><a href="/">Carlos Roberto<span>, Web Developer</span></a></h1>
-      <nav>
-        <ul>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Categorias</a></li>
-            <li><a href="#">Postagens</a></li>
-        </ul>
-      </nav>
-      <form action="." id="busca">
-        <input type="search" placeholder="Buscar...">
-      </form>
+      <div id="info" class="clearfix">
+        <img src="http://www.gravatar.com/avatar/82165b1bc1eb73dfe2c8657e5e504a1c?s=60" alt="" id="my_pic">
+        <h1>Carlos Roberto Gomes Junior</h1>
+        <p>Carlos trabalha como Web Developer em Ribeirão Preto, Brazil. <br>Utilizando JavaScript, HTML5, CSS3, Python/Django</p>
+      </div>
+      <h1 class="site-title"><a href="/">Carlos Roberto<span>, Web Developer</span></a></h1>
   </header>
   <div role="main" id="main">
       {{ content }}
   </div>
-  <footer>
+  
+  <footer id="footer">
+      <div id="others-posts" class="link-list">
+          <h3>Arquivo</h3>
+          <ul>
+              {% for post in site.posts %}
+                  <li>
+                      <a href="{{ post.url }}">{{ post.title }}</a>
+                  </li>
+              {% endfor %}
+          </ul>
+      </div>
 
+      <div id="categories" class="link-list">
+          <h3>Categorias</h3>
+          <ul>
+              <li><a href="#">JavaScript</a></li>
+              <li><a href="#">Backbone.js</a></li>
+              <li><a href="#">jQuery</a></li>
+              <li><a href="#">NodeJS</a></li>
+          </ul>
+      </div>
   </footer>
+  
 </body>
 </html>
