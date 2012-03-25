@@ -65,3 +65,10 @@ console.log( fn.expose('c') ); // 1
 console.log( fn2.expose('a') ); // 10
 console.log( config.expose('privateKey') ); // #aˆ&$DU)DI)RQ#@#$%ˆFHGFOIJE%$#$#%(
 {% endhighlight %}
+
+{% highlight python linenos %}
+from django.conf import settings
+
+def view(request):
+    return HttpResponse(request)
+{% endhighlight %}
