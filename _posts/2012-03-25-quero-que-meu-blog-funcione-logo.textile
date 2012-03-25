@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: Vamos estriar o blog
+title: Testando o valor de variaveis em javascript
 category: [javascript, html5]
 ---
 h1. Tituloe em h1
@@ -21,7 +21,7 @@ In reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
 <!--more-->
 
-{% highlight javascript %}
+{% highlight javascript linenos %}
 Function.prototype.expose = function( private ){
     this.fn = this.fn || undefined;
 

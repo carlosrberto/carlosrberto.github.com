@@ -68,16 +68,16 @@ td { vertical-align: top; }
 /* blog styles */
 
 html, body{ height:100%; }
-body{ padding-top:100px; color:#666; font-family:sans-serif; }
+body{ padding-top:100px; color:#666; font-family:sans-serif; background:url(../images/noise.png) repeat 0 0 #f2f2f2; }
 a{ color:#333; text-decoration:none; }
 a:visited{ color:inherit; }
 a:hover{ color:#999; }
 h1, h2, h3, h4, h5, h6{ margin:0; padding:0; font-family:"Trebuchet MS"; }
 
 #main{ max-width:960px; margin:0 auto; }
-.effect{ border:1px solid #f0f0f0; box-shadow:3px 3px 10px rgba(0, 0, 0, 0.5); }
+.effect{ border:1px solid #f0f0f0; box-shadow:3px 3px 7px rgba(0, 0, 0, 0.5); }
 
-#header{  box-shadow:3px 3px 5px rgba(0, 0, 0, 0.5); position:fixed; left:0; top:-60px; width:100%; margin:0; background:#fff; padding:10px 0; }
+#header{  box-shadow:3px 3px 5px rgba(0, 0, 0, 0.5); position:fixed; left:0; top:-60px; width:100%; margin:0; background:url(../images/noise.png) repeat 0 0 #fff; padding:10px 0; }
 #header{
     /* CSS3 animations */
     -webkit-transition: all 300ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
@@ -96,7 +96,7 @@ h1, h2, h3, h4, h5, h6{ margin:0; padding:0; font-family:"Trebuchet MS"; }
             transition: all 300ms linear;
 }
 #header #info h1{ text-align:left;  }
-#header #info #my_pic{ float:left; display:inline; margin:0 20px 0 0;  }
+#header #info #my_pic{ float:left; display:inline; margin:0 20px 0 0; border-radius:3px; }
 #header #info p{ font-size:12px; padding:0; margin:0; }
 #header h1{ font-size:22px; text-align:center; }
 #header h1.site-title{
@@ -121,14 +121,14 @@ h1, h2, h3, h4, h5, h6{ margin:0; padding:0; font-family:"Trebuchet MS"; }
 .post h4{ font-size:20px; }
 .post .post-title{ text-align:left; font-size:33px; width:700px; color:#C90009; margin:0; padding:10px 0 30px 0; }
 .post .post-title a{ color:#C90009; background:#C90009; color:#fff; padding:3px 10px; }
-.post .post-text{ padding:40px 50px; }
+.post .post-text{ padding:40px 50px; background:url(../images/noise.png) repeat 0 0 #F8F8F8; }
 .post .post-date{ text-align:left; margin:0; font-size:16px; color:#666; }
 .post .post-read-more{ padding:20px 0 40px; }
 .post .post-read-more a{ float:right; display:inline; padding:10px; background:#C90009; color:#fff; border-radius:4px; }
 
 
-#footer{ position:fixed; bottom:0; width:100%; background:rgba(255, 255, 255, 0.6); height:50px; border:1px solid #f0f0f0; box-shadow:0 -3px 5px rgba(0, 0, 0, 0.2); }
-.link-list{ width:30%; position:fixed; bottom:-87px; }
+#footer{ position:fixed; bottom:0; width:100%; height:50px; }
+.link-list{ width:30%; position:fixed; bottom:-175px; }
 .link-list{
     /* CSS3 animations */
     -webkit-transition: all 300ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
@@ -138,7 +138,10 @@ h1, h2, h3, h4, h5, h6{ margin:0; padding:0; font-family:"Trebuchet MS"; }
             transition: all 300ms cubic-bezier(1.000, 0.000, 0.000, 1.000); /* easeInOutExpo */
 }
 .link-list:hover{ bottom:0; }
-.link-list h3{ color:#666; font-size:20px;  padding:0 0 10px 30px; text-shadow:2px 2px 5px #f9f9f9; }
+.link-list h3{ font-size:20px;  padding:10px 0 10px 30px; }
+@media only screen and (max-width: 1200px) {
+    .link-list h3{ color:#fff; font-size:20px;  padding:10px 0 10px 30px; background:rgba(0, 0, 0, 0.5); }
+}
 .link-list ul{ margin:0; padding:0; border-bottom:0; box-shadow:3px 3px 10px rgba(0, 0, 0, 0.5);  background:#494949; }
 .link-list li{ padding:0; margin:0; list-style:none; border-bottom:1px solid #999; padding:0;  }
 .link-list li{
@@ -152,9 +155,15 @@ h1, h2, h3, h4, h5, h6{ margin:0; padding:0; font-family:"Trebuchet MS"; }
 .link-list li:hover{ background:#727272; }
 .link-list li a{ display:block; padding:10px 20px; color:#fff; }
 
-#others-posts{ left:0; width:500px; }
+#others-posts{ left:0; width:500px; display:none; }
 #categories{ right:0; width:300px; }
 #categories h3{ text-align:right; padding-right:30px; }
+
+#arquivos{ padding-bottom:50px; width:900px; margin:0 auto; }
+#arquivos h3{ font-size:25px; padding-bottom:16px; }
+#arquivos ul{ padding:0; margin:0; list-style:none; box-shadow:3px 3px 5px rgba(0, 0, 0, 0.5); padding:20px 20px 20px; }
+#arquivos ul li{ font-size:16px; padding:5px 0; } 
+#arquivos ul li time{ color:#999; font-size:12px; }
 
 /* Better styles for embedding GitHub Gists */
 .gist{font-size:13px;line-height:18px;margin-bottom:20px;width:100%}
@@ -165,11 +174,6 @@ h1, h2, h3, h4, h5, h6{ margin:0; padding:0; font-family:"Trebuchet MS"; }
 
 /* pygments */
 /*.highlight{ background:#000; }*/
-
-@media only screen and (min-width: 35em) {
-  
-
-}
 
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
 .ir br { display: none; }
