@@ -9,9 +9,16 @@
   <title>{% if page.title %}{{ page.title }} &raquo; {% endif %}Carlos Roberto Gomes Junior</title>
   
   <meta name="author" content="Carlos Roberto Gomes Junior">
-  <meta name="description" content="{% if page.meta_description %}{{ page.meta_description }}{% else %}Carlos Roberto Gomes Junior - escrevendo sobre JavaScript, HTML5, CSS3, Python/Django{% endif %}">
-  <meta name="keywords" content="{% if page.meta_keywords %}{{ page.meta_keywords }}{% else %}Carlos Roberto Gomes Junior, desenvolvimento web, html5, html, javascript, css, css3, ecmascript, django, python, html5 api, html5 javascript, ribeirao preto, sao paulo, brazil, brasil{% endif %}">
-  
+  {% if page.meta_description %}
+  <meta name="description" content="{{ page.meta_description }}">
+  {% else %}
+  <meta name="description" content="Carlos Roberto Gomes Junior - escrevendo sobre JavaScript, HTML5, CSS3, Python/Django">  
+  {% endif %}
+  {% if page.meta_keywords %}
+  <meta name="keywords" content="{{ page.meta_keywords }}">
+  {% else %}
+  <meta name="keywords" content="Carlos Roberto Gomes Junior, desenvolvimento web, html5, html, javascript, css, css3, ecmascript, django, python, html5 api, html5 javascript, ribeirao preto, sao paulo, brazil, brasil">
+  {% endif %}  
   <meta name="viewport" content="width=device-width">
   
   <link rel="stylesheet" href="/assets/css/style.css">
