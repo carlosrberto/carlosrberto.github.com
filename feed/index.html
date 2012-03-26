@@ -13,7 +13,7 @@
     <rights>Copyright (c) 2012 Carlos Roberto Gomes Junior</rights>
     {% for post in site.posts limit:20 %}
     <entry>
-        <title></title>
+        <title>{{ post.title }}</title>
         <link href="http://carlosroberto.name{{ post.url }}/"/>
         <updated>{{ post.date | date_to_xmlschema }}</updated>
         <id>http://carlosroberto.name{{ post.url }}/</id>
