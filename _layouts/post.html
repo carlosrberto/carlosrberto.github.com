@@ -2,7 +2,7 @@
 layout: posts
 ---
 <article class="post last">
-    <p class="post-date"><time pubdate datetime="{{ page.date | date_to_xmlschem }}">{{ page.date | date_to_long_string | replace:"March","Março" }}</time></p>          
+    <p class="post-date"><time datetime="{{ page.date | date_to_xmlschem }}">{{ page.date | date: "%d/%m/%Y" }}</time></p>          
     <h2 class="post-title"><span>{{ page.title }}</span></h2>          
     <div class="post-text effect">
         {{ content }}        
