@@ -23,6 +23,8 @@ function doNothing() {
     d = 4;
 };
 
+doNothing();
+
 console.log(a); // global
 console.log(b); // global
 console.log(c); // local ReferenceError c is not defined
