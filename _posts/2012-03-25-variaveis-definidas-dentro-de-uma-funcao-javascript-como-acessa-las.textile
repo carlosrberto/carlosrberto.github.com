@@ -111,12 +111,12 @@ Alguns testes:
 
 {% highlight javascript %}
 var fn = function() {
-    c = 1;
+    var c = 1;
     return c;
 };
 
 var fn2 = function() {
-    a = 1;
+    var a = 1;
     if( a > 0 ){
         a=10;
     }
