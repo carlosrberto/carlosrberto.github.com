@@ -1,0 +1,52 @@
+---
+layout: post
+title: Usando Sass/Compass com Gemfile
+categories: [javascript]
+tags: [sass, compass, gemfile, requirements]
+---
+
+Isso é util para garantir que a sua aplicação funcione sem problemas no futuro ou por exemplo se você tem projetos usando diferêntes versões do Sass ou Compass.
+
+É necessário instalar o bundler "(http://bundler.io/)":(http://bundler.io/)
+
+{% highlight sh %}
+$ gem install bundler
+{% endhighlight %}
+
+Na raiz do projeto use o comando:
+
+{% highlight sh %}
+$ bundle init
+{% endhighlight %}
+
+Isso vai criar um arquivo <code>Gemfile</code> onde você pode colocar as depenências da aplicação.
+
+Por exemplo:
+
+{% highlight ruby %}
+source "http://rubygems.org/"
+gem "compass", "0.12.1"
+gem "ceaser-easing", "0.4"
+{% endhighlight %}
+
+Depois você tem duas opções:
+
+Instalar as dependências no sistema.
+
+{% highlight sh %}
+$ bundle install
+{% endhighlight %}
+
+Ou espeficicar um local (melhor opção caso você queira usar versões diferentes).
+
+{% highlight sh %}
+$ bundle install --path .bundle
+{% endhighlight %}
+
+Esse segunda opção vai instalar as dependencias no diretório <code>.bundle</code>
+
+Para rodar o <code>compass</code> que foi instalando no <code>--path</code> especificado use:
+
+{% highlight sh %}
+$ bundle exec compass -v
+{% endhighlight %}
