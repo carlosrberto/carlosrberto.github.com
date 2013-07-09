@@ -3,6 +3,8 @@ layout: post
 title: Usando Sass/Compass com Gemfile
 categories: [javascript]
 tags: [sass, compass, gemfile, requirements]
+meta_keywords: sass, compass, gemfile, requirements
+meta_description: Isso é util para garantir que a sua aplicação funcione sem problemas no futuro ou por exemplo se você tem projetos usando diferêntes versões do Sass ou Compass.
 ---
 
 Isso é util para garantir que a sua aplicação funcione sem problemas no futuro ou por exemplo se você tem projetos usando diferêntes versões do Sass ou Compass.

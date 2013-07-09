@@ -3,6 +3,8 @@ layout: post
 title: Variáveis declaradas no contexto uma função JavaScript, como acessá-las?
 categories: [javascript]
 tags: [javascript, var, contexto, escopo]
+meta_keywords: javascript, var, contexto, escopo
+meta_description: JavaScript é tão dinâmico que podemos criar soluções que não existem na linguagem
 ---
 JavaScript é tão dinâmico que podemos criar soluções que não existem na linguagem.
 

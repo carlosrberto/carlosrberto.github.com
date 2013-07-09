@@ -3,6 +3,8 @@ layout: post
 title: Modificando o contexto da palavra-chave this em JavaScript
 categories: [javascript]
 tags: [javascript, var, contexto, escopo]
+meta_keywords: javascript, var, contexto, escopo
+meta_description: Em JavaScript a palavra-chave this é uma referência ao objeto atual, porem seu contexto pode mudar dependendo da forma como o objeto é tratado
 ---
 
 Em JavaScript a palavra-chave "<code>this</code>":https://developer.mozilla.org/en/JavaScript/Reference/Operators/this é uma referência ao objeto atual, porem seu contexto pode mudar dependendo da forma como o objeto é tratado
