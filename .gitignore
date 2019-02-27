@@ -1,8 +1,0 @@
-_site/*
-Thumbs.db
-.DS_Store
-*~
-*.swp
-.cache
-.next
-node_modules
