@@ -3,3 +3,7 @@ Thumbs.db
 .DS_Store
 *~
 *.swp
+build
+output
+.cache
+node_modules
