@@ -16,6 +16,7 @@
     "dev": "next src",
     "build": "next build src",
     "start": "next start src",
-    "export": "npm run build && next export src -o build"
+    "export": "npm run build && next export src -o build && touch ./build/.nojekyll",
+    "deploy": "git subtree push --prefix build origin master"
   }
 }
