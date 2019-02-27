@@ -28,7 +28,7 @@ function Home() {
             <li><a target="_blank" href="https://twitter.com/carlosrberto" title="Twitter"><i className="fab fa-twitter-square" /></a></li>
             <li><a target="_blank" href="https://medium.com/@carlosrberto" title="Medium"><i className="fab fa-medium" /></a></li>
             <li><a target="_blank" href="https://github.com/carlosrberto" title="Github"><i className="fab fa-github-square" /></a></li>
-            <li><a target="_blank" href="mailto:&#099;&#097;&#114;&#108;&#111;&#115;&#046;&#114;&#098;&#101;&#114;&#116;&#111;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" title="E-mail"><i className="fas fa-envelope-square" /></a></li>
+            <li><a href="mailto:&#099;&#097;&#114;&#108;&#111;&#115;&#046;&#114;&#098;&#101;&#114;&#116;&#111;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" title="E-mail"><i className="fas fa-envelope-square" /></a></li>
           </ul>
         </div>
       </div>
