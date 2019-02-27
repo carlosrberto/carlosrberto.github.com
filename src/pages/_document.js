@@ -20,6 +20,16 @@ class CustomDocument extends Document {
         <body>
           <Main />
           <NextScript />
+          <div dangerouslySetInnerHTML={{__html: `
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135290551-1"></script>
+            <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'UA-135290551-1');
+            </script>
+          `}} />
         </body>
       </html>
     )
