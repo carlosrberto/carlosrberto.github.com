@@ -17,7 +17,7 @@ function Home() {
         <p className={ss.subTitle}>Front-End Software Developer</p>
         <div className={ss.intro}>
           <p>
-            Hello! I'm a <strong>Software Developer</strong> from Ribeirão Preto, Brazil.<br />
+            Hello! I'm a <strong>Software Developer</strong> living in Stockholm, Sweden.<br />
             Currently I'm working on <strong>JavaScript</strong> projects mainly using the <strong>React JS</strong> ecosystem.
           </p>
 
