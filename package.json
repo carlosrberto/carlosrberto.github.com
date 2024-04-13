@@ -16,7 +16,7 @@
     "dev": "next src",
     "build": "next build src",
     "start": "next start src",
-    "export": "npm run build && next export src -o build && touch ./build/.nojekyll && echo 'about.carlosrberto.com' > ./build/CNAME",
+    "export": "npm run build && next export src -o build && touch ./build/.nojekyll && echo 'about.carlosroberto.dev' > ./build/CNAME",
     "deploy": "git subtree push --prefix build origin master"
   }
 }
